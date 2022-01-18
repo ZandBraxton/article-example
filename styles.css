@@ -48,15 +48,17 @@ table {
 	border-spacing: 0;
 }
 
-/* *, *::before, *::after {
-	outline: 1px solid red;
-} */
+*, *::before, *::after {
+	/* outline: 1px solid red; */
+	box-sizing: border-box;
+}
 
 
 /* NAV */
 
 header {
 	border-bottom: 1px solid #bfbfbf;
+	margin-bottom: 1.4rem;
 }
 
 .nav-wrapper {
@@ -164,3 +166,137 @@ header {
 }
 
 
+/* ARTICLE */
+
+main {
+	display: flex;
+	flex-flow: row;
+	max-width: 70rem;
+	margin: auto;
+}
+
+.article {
+	
+}
+
+.article-title {
+	font-size: 2.7rem;
+	font-weight: 700;
+	margin-bottom: 0 0 1rem;
+	height: auto;
+	line-height: 3rem;
+	letter-spacing: -.0375rem;
+	width: 100%;
+}
+
+.social-media-container {
+	margin-bottom: 0.6rem;
+}
+
+.social-media-container img {
+	width: 48px;
+	height: 48px;
+	cursor: pointer;
+}
+
+.tag-timestamp-container {
+	margin-bottom: 1em;
+}
+
+.tag {
+	font-weight: 700;
+	margin-right: 0.4em;
+}
+
+.timestamp {
+	color: #4D4D4D;
+}
+
+.author {
+	color: #4D4D4D;
+}
+
+.author a {
+	color: #00B3E5;
+	font-weight: 700;
+}
+
+.article-img {
+	margin-top: 1em;
+	width: 100%;
+}
+
+.img-caption {
+	display: block;
+	font-size: 0.7rem;
+	font-weight: 700;
+}
+
+.img-credit {
+	font-size: 0.7rem;
+	color: #4D4D4D;
+}
+
+article p {
+	color: #4D4D4D;
+	line-height: 1.5rem;
+	margin-top: 0.6rem;
+}
+
+.read-more {
+	font-weight: 700;
+	margin-top: 2rem;
+}
+
+.read-more a {
+	color: #00B3E5;
+}
+
+.reference {
+	font-size: 0.9rem;
+	font-weight: 700;
+}
+
+.reference em, .signup-ad {
+	font-weight: 400;
+	font-style: italic;
+}
+
+.reference a, .signup-ad a {
+	color: #00B3E5;
+}
+
+.more-topic-container {
+	display: flex;
+	justify-content: flex-start;
+	align-items: baseline;
+	margin: 2em 0;
+	gap: 0.6em;
+}
+
+
+.more-topic-container p {
+	font-weight: 700;
+}
+
+.more-topic-container button {
+	background-color: #005587;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	padding: 8px;
+	font-size: 1rem;
+	font-weight: 700;
+	cursor: pointer;
+	transition: all 0.1s;
+}
+
+.more-topic-container button:hover {
+	background-color: #288eb7;
+}
+/* SIDEBAR */
+
+aside {
+	flex: 0 0 18.75rem;
+	width: 18.75rem;
+}
