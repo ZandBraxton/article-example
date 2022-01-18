@@ -49,7 +49,6 @@ table {
 }
 
 *, *::before, *::after {
-	/* outline: 1px solid red; */
 	box-sizing: border-box;
 }
 
@@ -178,10 +177,6 @@ main {
 	flex-flow: row;
 	max-width: 70rem;
 	margin: 9rem auto auto auto;
-}
-
-.article {
-	
 }
 
 .article-title {
