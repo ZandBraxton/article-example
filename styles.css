@@ -32,7 +32,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-ol, ul {
+ ul {
 	list-style: none;
 }
 blockquote, q {
@@ -58,7 +58,10 @@ table {
 
 header {
 	border-bottom: 1px solid #bfbfbf;
-	margin-bottom: 1.4rem;
+	position: fixed;
+	background-color: white;
+	width: 100%;
+	top: 0;
 }
 
 .nav-wrapper {
@@ -67,6 +70,7 @@ header {
 	align-items: center;
 	margin: auto;
 	max-width: 70rem;
+	position: relative;
 }
 
 /* TOP NAV */
@@ -119,6 +123,7 @@ header {
 }
 
 /* BOTTOM NAV */
+
 
 .bottom-nav {
 	display: flex;
@@ -173,6 +178,7 @@ main {
 	flex-flow: row;
 	max-width: 70rem;
 	margin: auto;
+	margin-top: 9rem;
 }
 
 .article {
@@ -299,4 +305,51 @@ article p {
 aside {
 	flex: 0 0 18.75rem;
 	width: 18.75rem;
+	margin-left: 1rem;
+}
+
+.sidebar-content-tabs button {
+	font-size: 0.8rem;
+	font-weight: 900;
+	border: none;
+	padding: 8px 8px;
+	cursor: pointer;
+	margin: 0 0.1em 1em 0;
+	transition: all 0.2s;
+}
+
+.tab:hover {
+	background-color: #DDD;
+}
+
+.active-tab {
+	background-color: #00B3E5;
+	color: white;
+}
+
+.active-tab:hover {
+	background-color: #00B3E5;
+}
+
+.sidebar-articles {
+	display: flex;
+	flex-flow: column;
+}
+
+
+
+ol li {
+	display: flex;
+	flex-flow: row;
+	font-size: 1.4rem;
+	font-weight: 700;
+	margin: 0 0 1.2em 0.4em;
+	width: 80%;
+	text-align: left;
+	color: #4D4D4D;
+	cursor: pointer;
+}
+
+ol li:hover {
+	color: #00B3E5;
 }
